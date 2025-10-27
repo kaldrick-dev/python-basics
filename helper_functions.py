@@ -13,3 +13,10 @@ def convert_to_binary(text):
             partBinary = bin(ord(char))[2:]
             binaryName.append(partBinary)
         return ' '.join(binaryName)
+    
+def create_message(name, age, name_binary, age_binary):
+    return(
+        f"Hello {name}, your age {age} years old.\n"
+        f"Name in binary is: {name_binary}\n"
+        f"Age in binary is: {age_binary}"
+    )
